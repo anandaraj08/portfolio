@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./certificate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="logo-name">
+            <img src="./Images/mylogo.png" alt="MyLogo">
+            <h3><span>A</span>n@nd</h3>
+        </div>
+        <div class="menus">
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./services.html">Services</a></li>
+                    <li><a href="./certificate.html">Certificate</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="btns">
+            <button id="login">Login</button>
+            <button id="profile">Profile</button>
+            <div class="toggle_btn">
+            <i  class="fa-solid fa-bars" id="menu-bar"></i>
+            </div>
+        </div>
+        <div class="dropdown open">
+            <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./services.html">Services</a></li>
+                    <li><a href="./certificate.html">Certificate</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+        </div>
+    </header>
+
+    <section class="certificates">
+
+    <div class="certificate-container">
+
+        <div class="certificate-card">
+                <img src="./Images/NPTL.png" alt="">
+            <h3>NPTL Java</h3>
+            <p>I successfully completed the NPTEL Programming in Java certification course conducted by National Programme on Technology Enhanced Learning and coordinated by Indian Institute of Technology Kharagpur.
+            I secured an Elite certification with a consolidated score of 85%.</p>
+                <div class="skills">
+                   <span>Java</span>
+                   <span>OOP</span>
+                   <span>Programming</span>
+                </div>
+        </div>
+
+        <div class="certificate-card">
+                <img src="./Images/front-end-developer.png" alt="">
+            <h3>Front End Developer</h3>
+            <p>I successfully completed the Introduction to Front-End Development course authorized by Meta and offered through Coursera.
+            This course provided a strong foundation in frontend web development, including how websites work, frontend technologies, and modern development practices.</p>
+                <div class="skills">
+                   <span>HTML</span>
+                   <span>CSS</span>
+                   <span>Responsive</span>
+                </div>
+        </div>
+
+
+        <div class="certificate-card">
+                <img src="./Images/html,css,js-certificate.png" alt="">
+            <h3>Introduction of HTML, CSS, JavaScript</h3>
+            <p>I successfully completed the Introduction to HTML, CSS, & JavaScript course authorized by IBM and offered through Coursera.
+            This course helped me build a strong foundation in frontend web technologies and modern website development practices.</p>
+            <div class="skills">
+               <span>HTML</span>
+               <span>CSS</span>
+               <span>JavaScript</span>
+            </div>
+        </div>
+
+        <div class="certificate-card">
+            <img src="./Images/freecodecamp.png" alt="">
+            <h3>FreeCodeCamp Responsive</h3>
+            <p>I successfully completed the Responsive Web Design Developer Certification from freeCodeCamp, representing approximately 300 hours of coursework and practical projects.
+            <!-- This certification strengthened my frontend development skills, including responsive layouts, modern HTML, CSS, accessibility, and web page design principles.</p> -->
+            <div class="skills">
+               <span>HTML</span>
+               <span>CSS</span>
+               <span>JavaScript</span>
+            </div>
+        </div>
+
+        <div class="certificate-card">
+            <img src="./Images/UIUX-Design.png" alt="">
+            <h3>UI/UX Design Basics</h3>
+            <p>I successfully completed the 30 Days MasterClass in UI/UX Design conducted by NoviTech R&D Private Limited.
+            This masterclass enhanced my understanding of user interface and user experience design principles, and modern UI practices.</p>
+                <div class="skills">
+                   <span>UI/UX</span>
+                   <span>Figma</span>
+                   <span>Prototype</span>
+                </div>
+        </div>
+
+        <div class="certificate-card">
+            <img src="./Images/Front-end-React.png" alt="">
+            <h3>Developing Front-End Apps with React</h3>
+            <p>I successfully completed the Developing Front-End Apps with React course authorized by IBM and offered through Coursera.</p>
+                <div class="skills">
+                   <span>Front End</span>
+                   <span>JavaScript</span>
+                   <span>React</span>
+                </div>
+        </div>
+
+        <div class="certificate-card">
+            <img src="./Images/Full Stack Developer.png" alt="">
+            <h3>Introduction to Software Engineering</h3>
+            <p>I successfully completed the Introduction to Software Engineering course authorized by IBM and offered through Coursera.
+            This course helped me understand the fundamentals of software development, engineering practices, and the software development lifecycle.</p>
+                <div class="skills">
+                   <span>SDLC</span>
+                   <span>Engineering</span>
+                   <span>Testing</span>
+                </div>
+        </div>
+
+        <div class="certificate-card">
+            <img src="./Images/Git and GitHub.png" alt="">
+            <h3>Getting Started with Git and GitHub</h3>
+            <p>I successfully completed the Getting Started with Git and GitHub course authorized by IBM and offered through Coursera.
+            This course helped me understand version control systems, collaborative development workflows, and source code management using Git and GitHub.</p>
+                <div class="skills">
+                   <span>Git</span>
+                   <span>GitHub</span>
+                   <span>Vision Control</span>
+                </div>
+        </div>
+
+    </div>
+</section>
+
+<script>
+    const toggleBtn = document.querySelector('.toggle_btn');
+    const toggleBtnIcon = document.querySelector('.toggle_btn i');
+    const dropDownMenu = document.querySelector('.dropdown');
+
+    toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle('open');
+        const isOpen = dropDownMenu.classList.contains('open');
+        toggleBtnIcon.className = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars';
+    };
+</script>
+</body>
+</html>
