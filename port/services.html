@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./services.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="logo-name">
+            <img src="./Images/mylogo.png" alt="MyLogo">
+            <h3><span>A</span>n@nd</h3>
+        </div>
+        <div class="menus">
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./services.html">Services</a></li>
+                    <li><a href="./certificate.html">Certificate</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="btns">
+            <button id="login">Login</button>
+            <button id="profile">Profile</button>
+            <div class="toggle_btn">
+            <i  class="fa-solid fa-bars" id="menu-bar"></i>
+            </div>
+        </div>
+        <div class="dropdown open">
+            <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./services.html">Services</a></li>
+                    <li><a href="./certificate.html">Certificate</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+        </div>
+    </header>
+
+
+
+
+    <section class="services">
+    <div class="service-container">
+        <div class="service-card">
+            <h3>Web Development</h3>
+            <p>I build responsive and modern websites using HTML, CSS, and JavaScript.</p>
+            <ul>
+                <li>Responsive websites</li>
+                <li>Landing pages</li>
+                <li>Portfolio websites</li>
+            </ul>
+        </div>
+
+        <div class="service-card">
+            <h3>Frontend Development</h3>
+            <p>Creating attractive UI with animations and mobile-friendly design.</p>
+            <ul>
+                <li>HTML, CSS, JavaScript UI
+</li>
+                <li>Animations & responsive design</li>
+            </ul>
+        </div>
+
+        <div class="service-card">
+            <h3>Backend Development</h3>
+            <p>Developing server-side logic using Python and MySQL database.</p>
+            <ul>
+                <li>Java</li>
+                <li>Database connectivity (MySQL)</li>
+            </ul>
+        </div>
+
+        <div class="service-card">
+            <h3>Full Stack Projects</h3>
+            <p>Building complete web applications from frontend to backend.</p>
+            <ul>
+            <li>Car Rental </li>
+            <li>Travel </li>
+            <li>Chees board</li>
+            </ul>
+        </div>
+
+        <div class="service-card">
+            <h3>UI/UX Design</h3>
+            <p>I create intuitive and user-centered designs that enhance the overall experience of digital products. I focus on usability, accessibility, and modern design trends to deliver visually appealing and functional interfaces.</p>
+
+        </div>
+
+    </div>
+</section>
+
+
+<script>
+    const toggleBtn = document.querySelector('.toggle_btn');
+    const toggleBtnIcon = document.querySelector('.toggle_btn i');
+    const dropDownMenu = document.querySelector('.dropdown');
+
+    toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle('open');
+        const isOpen = dropDownMenu.classList.contains('open');
+        toggleBtnIcon.className = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars';
+    };
+</script>
+</body>
+</html>

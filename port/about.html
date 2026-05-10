@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./about.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="logo-name">
+            <img src="./Images/mylogo.png" alt="MyLogo">
+            <h3><span>A</span>n@nd</h3>
+        </div>
+        <div class="menus">
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./services.html">Services</a></li>
+                    <li><a href="./certificate.html">Certificate</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="btns">
+            <button id="login">Login</button>
+            <button id="profile">Profile</button>
+            <div class="toggle_btn">
+            <i  class="fa-solid fa-bars" id="menu-bar"></i>
+            </div>
+        </div>
+        <div class="dropdown open">
+            <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./services.html">Services</a></li>
+                    <li><a href="./certificate.html">Certificate</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+        </div>
+    </header>
+   
+    <div class="about">
+         
+        <div class="about-details">
+           
+            <p><span>Hello! I'm Anandaraj P</span> <br> A passionate and dedicated Java Full Stack Developer with a strong interest in building modern, responsive, and user-friendly web applications. I enjoy transforming ideas into real-world digital solutions through clean code and creative design.
+
+                
+            I have completed my BCA and MCA, and I continuously improve my skills in both frontend and backend development. My expertise includes HTML, CSS, JavaScript, Bootstrap, Java and MySQL. <br> <br>
+                
+            I am a quick learner, hardworking, and always ready to take on new challenges. My goal is to grow as a professional developer and contribute to innovative projects that create value. <br> <br>
+            <hr>
+            <br>
+            I believe that consistency, learning, and passion are the key to success.</p> <br>
+
+        </div>
+
+    </div>
+    <section class="education">
+    <h2>Education</h2>
+    <p>BCA - Bachelor of Computer Applications</p>
+    <p>MCA - Master of Computer Applications</p>
+    <p>Higher Secondary Education (12th Standard)</p>
+    <p>Secondary School Education (10th Standard)</p>
+    </section>
+
+
+    <script>
+   
+    const toggleBtn = document.querySelector('.toggle_btn');
+    const toggleBtnIcon = document.querySelector('.toggle_btn i');
+    const dropDownMenu = document.querySelector('.dropdown');
+
+
+    toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle('open');
+        const isOpen = dropDownMenu.classList.contains('open');
+        toggleBtnIcon.className = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars';
+    };
+</script>
+</body>
+</html>
